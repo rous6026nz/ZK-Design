@@ -1,0 +1,324 @@
+/*****************************************************************************
+ *File Name: typo.css.
+ * PATH: /styles/typo.css.
+ * Description: Main CSS Typography stylesheet for the ZKDesign Website.
+ * Version: 1.01.a.
+ * Author: Zaine Kingi.
+ * ============================= Change History ==============================
+ * - Ver- -- By -- --------------------- Changes -----------------------------
+ * 1.01.a          Initial Release
+ *****************************************************************************/
+/*------------------------ Website Typeface Importing -----------------------*/
+@font-face {
+	font-family: 'Nill';
+	src: url('../fonts/nilland.eot');
+	src: url('../fonts/nilland.woff') format('woff'), url('../fonts/nilland.ttf') format('truetype'), url('../fonts/nilland.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueLt';
+	src: url('../fonts/HelveticaNeueLTStd-Lt.eot');
+	src: url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Lt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*---------------------- End of Website Typeface Importing ------------------*/
+/*============================================================================
+ * ------------------- Typography Collage styling ----------------------------
+ * ==========================================================================*/
+#typo_container
+{
+	width: 880px; padding: 0px 0px 0px 80px; margin: 0px;
+}
+#typo_collage
+{
+	padding: 0px 0px 10px 0px; margin: 0px; width: 100%; border-bottom: #888 solid 5px;
+}
+#typo_collage li
+{
+	font-family: times, garamond, serif; font-size: 2.8em; color: #888; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -webkit-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -ms-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -moz-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -o-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; display: inline-block; float: left; margin: 0px; padding: 0px;
+	transition: color 1s; -webkit-transition: color 1s, text-shadow 1s; -moz-transition: color 1s, text-shadow 1s;
+}
+#typo_collage li:nth-child(1)/* innovative creative */
+{
+	font-size: 6em; line-height: 70px; letter-spacing: -5px; font-family: Nill; text-align: right;
+}
+#typo_collage li:nth-child(2)/* web */
+{
+	line-height: 150px; margin: 0px; margin-left: -35px; padding: 0px; font-size: 5.3em; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -webkit-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -ms-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -moz-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -o-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;
+	transform:rotate(90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg);
+}
+#typo_collage li:nth-child(3)/* Ð&Ð */
+{
+	line-height: 65px; margin-left: -30px; font-size: 6.3em; letter-spacing: 5px; width: 400px;
+}
+#typo_collage li:nth-child(4)/* graphic */
+{
+	letter-spacing: -7px; line-height: 65px; font-size: 4.5em; font-family: Nill; margin-left: -40px;
+}
+#typo_collage li:nth-child(5)/* design */
+{
+	font-size: 4.5em; line-height: 0px; letter-spacing: 2px; margin-left: 15px; margin-top: -35px;
+}
+#typo_collage li:nth-child(6)/* solutions... */
+{
+	font-size: 3.4em; line-height: 80px; letter-spacing: 2px; margin-left: 15px;
+}
+#typo_collage li:hover
+{
+	color: rgb(200,95,65); /*text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;*/
+}
+/************************************************************************
+*=============== iPad Portrait Styling =================================
+* Target Device: iPad Generations 1 and 2.
+************************************************************************/
+@media only screen and (max-width: 768px) and (min-width: 381px)/*iPad[Gen.1, 2] Done 24/7/13*/
+{
+    /*============================================================================
+    * ------------------- Typography Collage styling ----------------------------
+    * ==========================================================================*/
+    #typo_container
+    {
+    width: 608px; padding: 20px 0px 0px 100px; margin: 0px;
+    }
+    #typo_collage
+    {
+    padding: 0px 0px 10px 0px; margin: 0px; width: 100%;
+    }
+    #typo_collage li
+    {
+    font-family: times, garamond, serif; font-size: 2em; display: inline-block; float: left; margin: 0px; padding: 0px;
+    transition: color 1s; -webkit-transition: color 1s, text-shadow 1s; -moz-transition: color 1s, text-shadow 1s;
+    }
+    #typo_collage li:nth-child(1)/* innovative creative */
+    {
+    font-size: 4em; line-height: 50px; letter-spacing: -5px; font-family: Nill; text-align: right;
+    }
+    #typo_collage li:nth-child(2)/* web */
+    {
+    line-height: 95px; margin: 0px; margin-left: -20px; padding: 0px; font-size: 4em;
+    transform:rotate(90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg);
+    }
+    #typo_collage li:nth-child(3)/* Ð&Ð */
+    {
+    line-height: 45px; margin-left: -20px; font-size: 5em; width: 180px;
+    }
+    #typo_collage li:nth-child(4)/* graphic */
+    {
+    letter-spacing: -5px; line-height: 55px; font-size: 3.8em; font-family: Nill; margin-left: -25px;
+    }
+    #typo_collage li:nth-child(5)/* design */
+    {
+    font-size: 2.7em; line-height: 75px; letter-spacing: 2px; margin-left: 7px;
+    }
+    #typo_collage li:nth-child(6)/* solutions */
+    {
+    font-size: 1.8em; line-height: 0px; letter-spacing: 2px; margin-left: 9px;
+    }
+    #typo_collage li:hover
+    {
+    color: rgb(200,95,65);
+    }
+}/*End of Type Collage Styling for 768px Media Query*/
+
+/************************************************************************
+*==================== iPhone Landscape Styling ======================
+* Target Device: iPhone Landscape Mode.
+*************************************************************************/
+@media only screen and (max-width: 960px) and (min-width: 769px)/*iPhone Landscape Done 24/7/13*/
+{
+    /*============================================================================
+    * ------------------- Typography Collage styling ----------------------------
+    * ==========================================================================*/
+    #typo_container
+    {
+    width: 800px; padding: 20px 0px 0px 80px; margin: 0px;
+    }
+    #typo_collage
+    {
+    padding: 0px 0px 10px 0px; margin: 0px; width: 100%; 
+    }
+    #typo_collage li
+    {
+    font-family: times, garamond, serif; font-size: 2.3em; display: inline-block; float: left; margin: 0px; padding: 0px;
+    transition: color 1s; -webkit-transition: color 1s, text-shadow 1s; -moz-transition: color 1s, text-shadow 1s;
+    }
+    #typo_collage li:nth-child(1)/* innovative creative */
+    {
+    font-size: 5.5em; line-height: 70px; letter-spacing: -5px; font-family: Nill; text-align: right;
+    }
+    #typo_collage li:nth-child(2)/* web */
+    {
+    line-height: 150px; margin: 0px; margin-left: -35px; padding: 0px; font-size: 5em;
+    transform:rotate(90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg);
+    }
+    #typo_collage li:nth-child(3)/* Ð&Ð */
+    {
+    line-height: 75px; margin-left: -30px; font-size: 6.3em; width: 200px;
+    }
+    #typo_collage li:nth-child(4)/* graphic */
+    {
+    letter-spacing: -5px; line-height: 40px; font-size: 4.8em; font-family: Nill; margin-left: -40px;
+    }
+    #typo_collage li:nth-child(5)/* design */
+    {
+    font-size: 3.5em; line-height: 0px; letter-spacing: 1px; margin-left: 7px; margin-top: -35px;
+    }
+    #typo_collage li:nth-child(6)/* solutions... */
+    {
+    font-size: 2.4em; line-height: 70px; letter-spacing: 2px; margin-left: 7px;
+    }
+    #typo_collage li:hover
+    {
+    color: rgb(200,95,65); /*text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;*/
+    }
+}/*End of Type Collage Styling for 960px Media Query*/
+
+/*=====================================================================================
+ *  -------------------- Base Typography Styling --------------------------------------
+ *  ==================================================================================*/
+article a, a
+{
+    color: rgb(117, 117, 117); font-size: inherit; font-family: inherit;
+    transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -ms-transition: all 1s ease-in-out;
+}
+article a:hover
+{
+    color: #000; text-shadow: 2px 3px 1px #ccc;
+}
+h1
+{
+    font-size: 2em; color: #ccc; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; padding-top: 50px; text-transform: capitalize;
+}
+p,h1,h2,h3,h4,h5,h6,li a, span
+{
+    font-family: Nill; color: rgb(117, 117, 117); vertical-align: baseline;
+}
+h1,h2,h3,h4,h5,h6
+{
+	text-transform: capitalize;
+}
+.para2 h1:nth-child(1)
+{
+    font-size: 2em; color: rgb(200,95,66); text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff; -ms-text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;  line-height: 40px; letter-spacing: 1px;
+}
+.para2 h2:nth-child(2), .section2 hgroup h2, hgroup h2
+{
+    font-size: 1.2em; color: rgb(200,95,66); line-height: 30px; letter-spacing: 1px;
+}
+.para h4
+{
+    color: rgb(200,95,66);
+}
+.para2 h4
+{
+    margin-top: 10px; line-height: 25px;
+}
+.para2 p:nth-child(2)/* intro text p element */
+{
+    margin: 10px 0px; padding-top: 10px; border-top: 1px solid #CCCCCC; font-size: 1em; font-weight: 300; color: #666666;
+}
+.para2 p
+{
+    margin-top: 15px;
+}
+.para3 p:nth-child(1)
+{
+    padding-top: 10px;
+}
+.section2 hgroup h2, .para3 hgroup h2, .section3 hgroup, .section2 h2
+{
+    padding-bottom: 10px; border-bottom: 1px solid #CCCCCC; padding-left: 0px; text-transform: capitalize;
+}
+.emphisis/* styling for the emphisis class, which is used to emphisis text with a hover effect */
+{
+    color: rgb(200,95,66); font-size: 1em; font-weight: bold; text-shadow: none; letter-spacing: .5px;
+    transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;
+}
+.emphisis:hover
+{
+    color: #000; text-shadow: 2px 3px 1px #ccc;
+}
+#regards /* stylying the appreciation signature */
+{
+    margin-top: 25px; line-height: 25px; width: 65%; display: block; float: left;
+}
+.work_desc p /** work view styling **/
+{
+	margin-bottom: 15px;
+}
+/*---------------------- End of Base Typography Styling ------------------------------*/
+/*=====================================================================================
+ *  -------------------- Work Previewer Typography Styling ----------------------------
+ *  ==================================================================================*/
+.ch-info h3 {
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin: 0 25px;
+    padding: 140px 0 0 0px;
+    height: 110px;
+    text-shadow: 
+        0 0 1px #fff, 
+        0 1px 2px rgba(0,0,0,0.5);
+	
+    /* IE */
+    -ms-text-shadow: 
+        0 0 1px #fff, 
+        0 1px 2px rgba(0,0,0,0.5);
+}
+ 
+.ch-info p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+ 
+.ch-info p a {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+ 
+.ch-info p a:hover {
+    color: rgba(255,242,34, 0.8); text-shadow: none;
+}
+/*---------------------- End Work Previewer Styling ----------------------------------*/
+
+/*=====================================================================================
+ *  -------------------- Footer Typography Styling ------------------------------------
+ *  ==================================================================================*/
+footer h1
+{
+    font-size: 2.1em; padding: 0px; padding-top: 20px; margin: 0px;
+}
+footer p
+{
+    font-size: 1.1em;
+}
+.ft_contact_info p
+{
+    font-size: 1em; line-height: 0px; margin-right: 0px; padding-right: 0px;
+}
+.scroller a
+{
+    opacity: 0.9;
+    transition: opacity 0.6s; -webkit-transition: opacity 0.6s; -moz-transition: opacity 0.6s; -ms-transition: opacity 0.6s;
+}
+.scroller a:hover
+{
+    opacity: 1; 
+}
+/*---------------------- End of Footer Typography Styling ----------------------------*/

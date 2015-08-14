@@ -1,0 +1,71 @@
+/*****************************************************************************
+ * PATH: /styles/nav.css
+ * Description: CSS stylesheet for the navigation of the ZKDesign Website
+ * Version: 1.01.a
+ * Author: Zaine Kingi
+ * ============================= Change History ==============================
+ * - Ver- -- By -- --------------------- Changes -----------------------------
+ * 1.01.a          Initial Release
+ *****************************************************************************/
+/************************************************************************************
+ *  =================================================================================
+ *  ------------------ Styling for the main navigation ------------------------------
+ *  =================================================================================
+ ***********************************************************************************/
+nav
+{
+    display: block; padding: 0px; margin: 0px 0px 0px 0px; float: right; clear: right;
+}
+nav ul
+{
+    float: right; width: 200px; margin: 0px; padding: 0px; padding-top: 113px;
+}
+nav ul li a
+{
+    background-image: url('../images/nav_icons_2.png'); padding: 0px 5px; visibility: visible; zoom: 1; display: block; float: left; width: 40px; height: 70px; margin-top: 10px; overflow: hidden; background-repeat: no-repeat no-repeat; text-indent: -999px;
+    transition: opacity 0.3s, margin-top 0.3s, text-indent 0.3s; -webkit-transition: opacity 0.3s, margin-top 0.3s, text-indent 0.3s; -moz-transition: opacity 0.3s, margin-top 0.3s, text-indent 0.3s;
+}
+nav ul li a:hover
+{
+    margin-top: 0px; text-indent: 0px; line-height: 40px; font-size: .8em;
+}
+li #home
+{
+    background-position: 8px 35px;
+}
+li #work
+{
+    background-position: -43px 35px; 
+}
+li #bio
+{
+    background-position: -90px 35px;
+}
+li #contact
+{
+    background-position: -140px 37px;
+}
+/******************************* End of the main navigation **************************/
+/*=====================================================================================
+ *----------------------------- Admin Navigation Styling ------------------------------
+ *  Author: Zaine Kingi.
+ *  Website: zkdesign.co.nz
+ *  Description: Navigation styling for administrative pages of ZKDesign admin users.
+ * ************************************************************************************/
+#admin
+{
+    width: 400px; height: 25px; padding-top: 170px;
+}
+#admin li
+{
+    
+}
+#admin li a
+{
+    width: 80px; height: 20px; line-height: normal; text-align: center; text-indent: 0px; background-image: none; font-size: .9em; margin: 0px; padding: 0px;
+    transition: all ease-in-out 0.3s; -webkit-transition: all ease-in-out 0.3s; -moz-transition: all ease-in-out 0.3s; -o-transition: all ease-in-out 0.3s;
+}
+#admin li a:hover
+{
+    color: #fff; background-color: rgb(200,95,66);
+}

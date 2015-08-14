@@ -1,0 +1,197 @@
+/*==================================================================
+ * File Name: ie8.css.
+ * Path: /styles/ie8.css.
+ * Description: A stylesheet for rendering http://www.zkdesign.co.nz
+ *              in Internet Explorer version 8 browsers on a native
+ *              Windows environment.
+ * Version: 1.01.a.          
+ * Author: Zaine Kingi.
+ * ============================= Change History ==============================
+ * - Ver- -- By -- --------------------- Changes -----------------------------
+ * 1.01.a          Initial Release
+ * 1.01.b          Zaine Kingi                  Removed Typo Collage and fixed
+ *                                              the background positioning of
+ *                                              the buttons and icons.
+ *****************************************************************************/
+/*============================================================================
+ * ------------------- Navigation Styling ------------------------------------
+ * ==========================================================================*/
+nav ul li a
+{
+    background-repeat: no-repeat;
+}
+/*------------------------ End of Nav Styling -------------------------------*/
+/*============================================================================
+ * ------------------- Structual Element Styling -----------------------------
+ * ==========================================================================*/
+/*----------------- Home Page Welcome Statement Styling ---------------------*/
+.para2 hgroup
+{
+    border-bottom: 1px solid #000; padding-bottom: 15px; line-height: 30px;
+}
+.para2 hgroup h1
+{
+    margin-bottom: 10px;
+}
+ /* drop_caps class applies the drop caps character at the start of the paragraph */
+p.drop_caps:nth-of-type(1):first-letter
+{
+    float: left; font-size: 3.2em; margin: 11px 5px 0 0; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;
+}
+/*-------------------- End of Structual Element Styling ---------------------*/
+/*============================================================================
+ * ------------------- Typography Collage styling ----------------------------
+ * ==========================================================================*/
+#typo_collage
+{
+    display: none; visibility: hidden;
+}
+/*-------------------- End of the Collage Styling ---------------------------*/
+/*****************************************************************************
+ *====================== Skills Graph Styling ================================
+ ****************************************************************************/
+/* Styling of the graph */
+#graph, #markers
+{
+    width: 100%;
+    display: block;
+    padding-top: 25px; margin: 0px; margin-bottom: 25px;
+    border-left: 1px solid rgb(200,95,66);
+    border-top: 1px solid rgb(200,95,66);
+}
+#graph li
+{
+    margin-left: 0px; margin-bottom: 25px; padding: 5px 10px; border-bottom: 1px solid rgb(200,95,66); border-right: 25px solid rgb(200,95,66); height: 15px;
+}
+#graph li p, #respon_d span
+{
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px; line-height: 2px;
+}
+#respon_d span
+{
+    display: inline-block; font-size: 0.7em; padding-top: 15px; 
+}
+
+/* Styling the graph bars */
+#html, #css, #ai, #ps,#id
+{
+    width: 80%;
+}
+#php, #jq, #respon_d
+{
+    width: 60%;
+}
+#js
+{
+    width: 40%;
+}
+
+/* Styling of the graph markers */
+#markers
+{
+    width: 80%; display: block; float: right; margin: 0px; padding: 0px; border: none;
+}
+#markers li
+{
+    display: block; float: left; width: 25%; margin: 25px 0px 0px 0px; padding: 0px;
+}
+#markers li p
+{
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px;
+}
+/* Graph Label */
+#label
+{
+    width: 20%; text-shadow: 1px 1px 1px #fff; letter-spacing: .5px; margin-top: 25px;
+}
+
+/*---------------------- end of Skills Graph Styling ------------------------*/
+/*****************************************************************************
+ *========================= Gallery Container Styling ========================
+ *	Description: Styling for the "Image Gallery" display for work.
+ *		     Used on the "_work" pages of the website.
+ *	Author: Zaine Kingi.
+ *	Website: ZKDesign.co.nz
+ ****************************************************************************/
+#slider ul, #slider ul li, #slider ul li a, #slider ul li a img
+{
+    border: none;
+}
+.left
+{
+   background-position: -180px -45px;
+}
+.right
+{
+    background-position: -225px -45px;
+}
+/*-------------------- end of the Work Display Styling ----------------------*/
+/*****************************************************************************
+ *========================= Footer Container Styling =========================
+ ****************************************************************************/
+footer
+{
+    margin: 0px; padding: 0px; padding-bottom: 25px; display: block; clear: both; border-top: 5px solid #000; margin-top: 15px;
+}
+    #footer_content, #ft_contact_info
+    {
+        width: 960px; margin: 0px auto; padding: 0px;
+    }
+    #zk_details, .ft_contact_info
+    {
+        display: block; padding: 0px; margin: 0px; width: 90%; float: left;
+    }
+    #zk_details h1, #zk_details p
+    {
+	font-size: 2em; text-shadow: none; letter-spacing: normal;
+    }
+    #zk_details p
+    {
+	font-size: .9em; letter-spacing: .5px;
+    }
+    #scroller
+    {
+        float: right; padding-top: 15px;
+    }
+    footer hr
+    {
+        border-top: thin dotted #999; width: 100%;
+    }
+    #ft_contact_info
+    {
+        float: none;
+    }
+    .ft_contact_info
+    {
+        padding: 15px 0px 15px 0px;
+    }
+    .ft_contact_info span, .scroller
+    {
+        display: block; float: left; width: 45px; height: 45px; background-image: url('../images/icons.jpg'); margin-right: 10px; padding: 0px; margin-left: 25px;
+        transition: all ease-in-out 0.3s; -webkit-transition: all ease-in-out 0.3s; -moz-transition: all ease-in-out 0.3s;
+    }
+    .ft_contact_info p
+    {
+        font-size: .8em; display: block; width: 130px; height: 25px; float: left; line-height: 50px;
+    }
+    .ft_contact_info p:last-of-type
+    {
+        width: 170px;
+    }
+    .scroller
+    {
+        background-position: -135px -45px;
+    }
+    .phone
+    {
+        margin-left: 0px; background-position: -90px -45px; cursor: pointer;
+    }
+    .twitter
+    {
+        background-position: -0px -45px;
+    }
+    .lnkdin
+    {
+        background-position: -45px -45px;
+    }
+/************************** End Of The Footer Styling *************************/

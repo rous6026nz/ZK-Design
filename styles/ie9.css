@@ -1,0 +1,327 @@
+/*==================================================================
+* File Name: ie9.css.
+* Path: /styles/ie9.css.
+* Description: A stylesheet for rendering http://www.zkdesign.co.nz
+*              in Internet Explorer version 9 browsers on a native
+*              Windows environment.
+* Version: 1.01.a.          
+* Author: Zaine Kingi.
+* ============================= Change History ==============================
+* - Ver- -- By -- --------------------- Changes -----------------------------
+* 1.01.a            Initial Release
+* 1.01.b            Zaine Kingi                 Removal of the border around
+*                                               images of the image-gallery.
+*                                               -----------------------------
+* 1.02.a            Zaine Kingi                 Add Media Queries for screen
+*                                               res [768px and 960px].
+*                                               -----------------------------
+* 1.02.b            Zaine Kingi                 Correct the Typo_Collage in IE
+*                                               browsers [9,10].
+*****************************************************************************/
+    /*============================================================================
+    * ------------------- Structual Element Styling -----------------------------
+    * ==========================================================================*/
+    /* drop_caps class applies the drop caps character at the start of the paragraph */
+    p.drop_caps:nth-of-type(1):first-letter
+    {
+    float: left; font-size: 3.2em; margin: 11px 5px 0 0; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;
+    }
+    /*-------------------- End of Structual Element Styling ---------------------*/
+    /*============================================================================
+    * ------------------- Typography Collage styling ----------------------------
+    * ==========================================================================*/
+    #typo_container
+    {
+    width: 880px; padding: 0px 0px 0px 80px; margin: 0px;
+    }
+    #typo_collage
+    {
+    padding: 0px 0px 10px 0px; margin: 0px; width: 100%; border-bottom: #CCCCCC solid 5px;
+    }
+    #typo_collage li
+    {
+    font-family: times, garamond, serif; font-size: 2.8em; color: #cccccc; text-shadow: 0px -1px 1px #000, 0px 1px 1px #fff; display: inline-block; float: left; margin: 0px; padding: 0px;
+    transition: color 1s; -webkit-transition: color 1s, text-shadow 1s; -moz-transition: color 1s, text-shadow 1s;
+    }
+    #typo_collage li:nth-child(1)/* innovative creative */
+    {
+    font-size: 6.3em; line-height: 60px; letter-spacing: -5px; font-family: Nill; text-align: right;
+    }
+    #typo_collage li:nth-child(2)/* web */
+    {
+    line-height: 120px; margin: 0px; margin-left: -35px; padding: 0px; font-size: 5em; text-shadow: 1px 0px 1px #000;
+    transform:rotate(90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg);
+    }
+    #typo_collage li:nth-child(3)/* Ð&Ð */
+    {
+    line-height: 55px; margin-left: -15px; font-size: 7.8em;
+    }
+    #typo_collage li:nth-child(4)/* graphic */
+    {
+    letter-spacing: -5px; line-height: 90px; font-size: 5em; font-family: Nill; margin-left: -30px;
+    }
+    #typo_collage li:nth-child(5)/* design */
+    {
+    font-size: 3.3em; line-height: 30px; letter-spacing: 2px; margin-left: 9px; margin-top: -25px;
+    }
+    #typo_collage li:nth-child(6)/* solutions... */
+    {
+    font-size: 2.2em; line-height: 60px; letter-spacing: 2px; margin-left: 9px; margin-top: 20px; border-top: 5px solid #ccc;
+    }
+    #typo_collage li:hover
+    {
+    color: rgb(200,95,65); /*text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;*/
+    }
+    /*---------------------- End of the Collage Styling ---------------------------------*/
+    
+    /*****************************************************************************
+    *====================== Skills Graph Styling ================================
+    ****************************************************************************/
+    
+    /* Styling of the graph */
+    #graph, #markers
+    {
+    width: 100%;
+    display: block;
+    padding-top: 25px; margin-bottom: 25px;
+    border-left: 1px solid rgba(200,95,66,0.4);
+    border-top: 1px solid rgba(200,95,66,0.4);
+    }
+    #graph li
+    {
+    margin-left: 25px; margin-bottom: 25px; padding: 5px 10px; border-bottom: 1px solid rgba(200,95,66,0.4); border-right: 25px solid rgba(200,95,66,0.4); height: 15px;
+    
+    /* Standard */
+    transform: skew(125deg);
+    
+    /* Safari */
+    -webkit-transform: skew(125deg);
+    
+    /* Firefox */
+    -ms-transform: skew(125deg);
+    
+    /* Opera */
+    -o-transform: skew(125deg);
+    }
+    #graph li p, #respon_d span
+    {
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px; line-height: 2px;
+    
+    /* Standard */
+    transform: skew(-125deg);
+    
+    /* Safari */
+    -webkit-transform: skew(-125deg);
+    
+    /* Firefox */
+    -ms-transform: skew(-125deg);
+    
+    /* Opera */
+    -o-transform: skew(-125deg);
+    }
+    #respon_d span
+    {
+    display: inline-block; font-size: 0.7em; padding-top: 15px; 
+    }
+    
+    /* Styling the graph bars */
+    #html, #css, #ai, #ps,#id
+    {
+    width: 75%;
+    }
+    #php, #jq, #respon_d
+    {
+    width: 55%;
+    }
+    #js
+    {
+    width: 35%;
+    }
+    
+    /* Styling of the graph markers */
+    #markers
+    {
+    margin-top: 20px; padding: 0px; padding-left: 20%; border: none;
+    }
+    #markers li
+    {
+    display: block; float: left; width: 20%; margin-bottom: 20px;
+    
+    /* Standard */
+    transform: rotate(-40deg);
+    
+    /* Safari */
+    -webkit-transform: rotate(-40deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(-40deg);
+    
+    /* IE */
+    -ms-transform: rotate(-40deg);
+    
+    /* Opera */
+    -o-transform: rotate(-40deg);
+    
+    /* Internet Explorer */
+    /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); 0=0 1=90 2=180 3=270*/
+    
+    }
+    #markers li p
+    {
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px;
+    }
+    /* Graph Label */
+    #label
+    {
+    width: 20%; text-shadow: 1px 1px 1px #fff; letter-spacing: .5px;
+    }
+    /*---------------------- end of Skills Graph Styling ------------------------*/
+    /*****************************************************************************
+    *===================== Work Display Gallery Stying ==========================
+    * Description: Styling of the Work Gallery Display.
+    * Author:  Zaine Kingi.
+    *****************************************************************************/
+    #slider ul
+    {
+    border: none;
+    }
+    #slider ul li
+    {
+    border: none;
+    }
+    #slider ul li a
+    {
+    border: none;
+    }
+    #slider ul li a img
+    {
+    border: none;
+    }
+    /*-------------------- end of the Work Display Styling ----------------------*
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    *                                                                           *
+    ****************************************************************************/
+/*************************************************************************
+* Media Queries.
+* Description: Media Queries Styling for ZKDesign Website.
+* Author: Zaine Kingi
+**************************************************************************/
+/*************************************************************************
+*=============== iPad Portrait Styling =================================
+* Target Device: iPad Generations 1 and 2.
+************************************************************************/
+@media only screen and (max-width: 768px) and (min-width: 381px)/*iPad[Gen.1, 2] Done 24/7/13*/
+{
+    /*============================================================================
+    * ------------------- Typography Collage styling ----------------------------
+    * ==========================================================================*/
+    #typo_container
+    {
+    width: 608px; padding: 20px 0px 0px 100px; margin: 0px;
+    }
+    #typo_collage
+    {
+    padding: 0px 0px 10px 0px; margin: 0px; width: 100%; border-bottom: #CCCCCC solid 5px;
+    }
+    #typo_collage li
+    {
+    font-family: times, garamond, serif; font-size: 2em; color: #cccccc; text-shadow: 0px -1px 1px #000, 0px 1px 1px #fff; display: inline-block; float: left; margin: 0px; padding: 0px;
+    transition: color 1s; -webkit-transition: color 1s, text-shadow 1s; -moz-transition: color 1s, text-shadow 1s;
+    }
+    #typo_collage li:nth-child(1)/* innovative creative */
+    {
+    font-size: 4em; line-height: 50px; letter-spacing: -5px; font-family: Nill; text-align: right;
+    }
+    #typo_collage li:nth-child(2)/* web */
+    {
+    line-height: 85px; margin: 0px; margin-left: -30px; padding: 0px; font-size: 4.3em; text-shadow: 1px 0px 1px #000;
+    transform:rotate(90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg);
+    }
+    #typo_collage li:nth-child(3)/* Ð&Ð */
+    {
+    line-height: 55px; margin-left: -25px; font-size: 5.9em;
+    }
+    #typo_collage li:nth-child(4)/* graphic */
+    {
+    letter-spacing: -5px; line-height: 45px; font-size: 4.2em; font-family: Nill; margin-left: -35px;
+    }
+    #typo_collage li:nth-child(5)/* design */
+    {
+    font-size: 2.3em; line-height: 15px; letter-spacing: 2px; margin-left: 7px;
+    }
+    #typo_collage li:nth-child(6)/* solutions */
+    {
+    font-size: 1.6em; line-height: 40px; letter-spacing: 2px; margin-left: 9px; margin-top: 10px; border-top: 5px solid #ccc;
+    }
+    #typo_collage li:hover
+    {
+    color: rgb(200,95,65); /*text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;*/
+    }
+    /*---------------------- End of the Collage Styling ------------------------*/
+}/******************** End of iPad Portrait Styling ***************************/
+/*************************************************************************
+*======================= iPhone Landscape Styling ========================
+* Target Device: iPhone Landscape Mode.
+*************************************************************************/
+@media only screen and (max-width: 960px) and (min-width: 769px)/*iPhone Landscape Done 27/7/13*/
+{
+    /*============================================================================
+    * ------------------- Typography Collage styling ----------------------------
+    * ==========================================================================*/
+    #typo_container
+    {
+    width: 800px; padding: 20px 0px 0px 80px; margin: 0px;
+    }
+    #typo_collage
+    {
+    padding: 0px 0px 10px 0px; margin: 0px; width: 100%; border-bottom: #CCCCCC solid 5px;
+    }
+    #typo_collage li
+    {
+    font-family: times, garamond, serif; font-size: 2.3em; color: #cccccc; text-shadow: 0px -1px 1px #000, 0px 1px 1px #fff; display: inline-block; float: left; margin: 0px; padding: 0px;
+    transition: color 1s; -webkit-transition: color 1s, text-shadow 1s; -moz-transition: color 1s, text-shadow 1s;
+    }
+    #typo_collage li:nth-child(1)/* innovative creative */
+    {
+    font-size: 5.5em; line-height: 60px; letter-spacing: -5px; font-family: Nill; text-align: right;
+    }
+    #typo_collage li:nth-child(2)/* web */
+    {
+    line-height: 120px; margin: 0px; margin-left: -35px; padding: 0px; font-size: 5em; text-shadow: 1px 0px 1px #000;
+    transform:rotate(90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg);
+    }
+    #typo_collage li:nth-child(3)/* Ð&Ð */
+    {
+    line-height: 75px; margin-left: -35px; font-size: 7.8em;
+    }
+    #typo_collage li:nth-child(4)/* graphic */
+    {
+    letter-spacing: -5px; line-height: 45px; font-size: 4.8em; font-family: Nill; margin-left: -40px;
+    }
+    #typo_collage li:nth-child(5)/* design */
+    {
+    font-size: 3.2em; line-height: 0px; letter-spacing: 2px; margin-left: 7px; margin-top: -35px;
+    }
+    #typo_collage li:nth-child(6)/* solutions... */
+    {
+    font-size: 2.2em; line-height: 50px; letter-spacing: 2px; margin-left: 7px; margin-top: 5px; border-top: 5px solid #ccc;
+    }
+    #typo_collage li:hover
+    {
+    color: rgb(200,95,65); /*text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;*/
+    }
+    /*---------------------- End of the Collage Styling ------------------------*/
+}/******************** End of 769px-960px Media Query ***************************/

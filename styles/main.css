@@ -1,0 +1,1567 @@
+/*****************************************************************************
+* File Name: main.css
+* PATH: /styles/main.css
+* Description: Main CSS stylesheet for structural styling of the ZKDesign Website
+* Version: 1.01.a
+* Author: Zaine Kingi
+* ============================= Change History ==============================
+* - Ver- -- By -- --------------------- Changes -----------------------------
+* 1.01.a          Initial Release
+*****************************************************************************/
+    /*---------------------------------CSS Stylesheet imports--------------------*/
+    @import url('reset.css');/*========= CSS Reset stylesheet ===================*/
+    @import url('nav.css');/*=========== CSS stylesheet for the navigation ======*/
+    @import url('typo.css');/*========== CSS Typography stylesheet ==============*/
+    /*---------------------------------end of the CSS stylesheet imports---------*/
+    .clearfix:after
+    {
+    visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;
+    }
+    .clearfix
+    {
+    display: inline-block;
+    }
+    .divider
+    {
+	display: block; height: 1px; width: 100%; clear: both; background-color: #ccc; border-bottom: 1px solid #fff;
+    }
+    /* start commented backslash hack \*/
+    * html .clearfix
+    {
+    height: 1%;
+    }
+    .clearfix
+    {
+    display: block;
+    }
+    /* close commented backslash hack */
+/******************************************************************************
+*============================= Main Website Styling ==========================
+******************************************************************************/
+    html
+    {
+    overflow-x: hidden;
+    }
+    body:before
+    {
+    content: ""; position: fixed; top: -15px; left: 0; width: 100%; height: 15px; z-index: 100;
+    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.8); -moz-box-shadow: 0px 0px 20px rgba(0,0,0,.8); -ms-box-shadow: 0px 0px 20px rgba(0,0,0,.8); -o-box-shadow: 0px 0px 20px rgba(0,0,0,.8); box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+    }
+    body
+    {
+    position: relative; margin: 0px; padding: 0px; overflow-x: hidden;
+    }
+    div
+    {
+    display: block;
+    }
+    hr
+    {
+    border-top-color: #CCCCCC; border-top-style: solid; border-width: 1px 0 0; display: block; height: 1px; margin: 0; padding: 0;
+    }
+    p, li a
+    {
+    font-size: 1em; line-height: 2em;
+    }
+    #main
+    {
+    background-color: #fafafa; 
+    }
+    #zkdesign
+    {
+    height: 195px; width: 960px; margin: 0px auto;
+    }
+    #zkdesign p a
+    {
+	width: 25px; display: block; float: right; margin-right: -170px; font-size: 1em; color: #999; font-family: Nill; margin-top: 10px;
+	transition: all ease-in-out 0.6s; -webkit-transition: all ease-in-out 0.6s; -moz-transition: all ease-in-out 0.6s;
+    }
+    #zkdesign p a:hover
+    {
+	opacity: 1;
+    }
+    #logo
+    {
+    display: inline-block; position: absolute; top: 0px; left: 0px; opacity: 0.6;
+    transition: all ease-in-out 0.9s; -webkit-transition: all ease-in-out 0.9s; -moz-transition: all ease-in-out 0.9s;
+    }
+    #logo a img
+    {
+    border: none; height: 195px;
+    }
+    #logo:hover
+    {
+    opacity: 1;
+    }
+    .section1, .section2, .section3
+    {
+    width: 960px; margin: 0px auto; padding: 20px 0px;
+    }
+    .para1
+    {
+    padding: 0px; margin: 0px auto;
+    }
+    .para2, .para3
+    {
+    padding: 0px; margin: 0px; padding-left: 80px; overflow: hidden;
+    }
+    .para2 hgroup
+    {
+    padding: 0px; margin: 0px;
+    }
+    /* styling for the work_desc class */
+    .work_desc
+    {
+    width: 700px; display: block; float: left; margin-right: 20px;
+    }
+    /* drop_caps class applies the drop caps character at the start of the paragraph */
+    p.drop_caps:nth-of-type(1):first-letter
+    {
+    float: left; font-size: 4.5em; margin: 11px 5px 0 0; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;
+    }
+    /* styling for the 'aside' element used for left-colum displaying on all work view pages and email_success page */
+    .aside, .aside_redirect
+    {
+    width: 240px; border-top: 1px solid #ccc; display: block; float: right; margin: 0px; padding: 0px;
+    }
+    .aside h2, .aside_redirect h2
+    {
+    text-align: left; margin-top: 10px; text-indent: 15px;
+    }
+    .aside p, .aside p a, .aside_redirect p, .aside_redirect p a
+    {
+    text-indent: 15px; color: #999;
+    transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;
+    }
+    .aside p a:hover, .aside_redirect p a:hover
+    {
+    color: red; text-shadow: 2px 3px 1px #ccc;
+    }
+    .aside_redirect
+    {
+    margin-top: 158px;
+    }
+    /*=====================================================================================
+     *-------------------------- Styling for the Admin Sections ---------------------------
+     *=====================================================================================
+     *	Author: Zaine Kingi.
+     *	Website: www.zkdesign.co.nz
+     *	Description: Section for the styling of the backend admin pages of the website.
+     *===================================================================================*/
+    #form h3, .data h3
+    {
+	color: #fff; font-size: 1.2em;
+    }
+    .data
+    {
+	/*border: 1px solid red;*/
+	display: block; float: left; width: 300px; margin: 0px; margin-top: 25px; padding: 10px; padding-left: 25px; padding-top: 20px;
+    }
+    .data h3
+    {
+	color: #333; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;
+    }
+    .data p:nth-child(2)
+    {
+	margin-bottom: 10px; font-size: .7em;
+    }
+    .data p
+    {
+	text-transform: capitalize;
+    }
+    .data p a
+    {
+	color: #666;
+	transition: all ease-in-out .6s; -webkit-transition: all ease-in-out .6s; -moz-transition: all ease-in-out .6s; -ms-transition: all ease-in-out .6s; -o-transition: all ease-in-out .6s;
+    }
+    .data p a:hover
+    {
+	color: #333; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;
+    }
+    /*------------------------- End of Admin Section Styling ----------------------------*/
+    /*====================================================================================
+    * Classes Col_1 and Col_2 Created for multi colum layouts.
+    * ====================================================================================*/
+    .col_1, .col_2
+    {
+    width: 420px; display: block; float: left; padding: 0px; margin: 10px 0px 50px 0px;
+    }
+    .col_1
+    {
+    margin-left: 60px; margin-right: 40px;
+    }
+    .col_1 p, .col_2 p
+    {
+    margin-bottom: 15px; font-style: oblique;
+    }
+    .col_1 p span, .col_2 p span
+    {
+    font-size: .9em; color: #000; font-style: normal; letter-spacing: 1px;
+    }
+    .col_1 p:nth-child(3), .col_2 p:nth-child(3)
+    {
+    border-bottom: 1px dotted #999;
+    }
+    /*=======================================================================
+    *  ---------------- Base styling for the Work Display ------------------
+    *  ===================================================================*/
+    .recent_wrk, .my_wrk
+    {
+    padding-top: 0px; margin: 10px 0 0 0; width: 100%; text-align: center;
+    }
+    .recent_wrk:after, .my_wrk:after
+    {
+    clear: both;
+    }
+    .recent_wrk:after, .ch-item:before, .my_wrk:after
+    {
+    content: '';
+    display: table;
+    }
+    .recent_wrk li, .my_wrk li
+    {
+    width: 100%; height: 350px; display: block; float: left; margin: 25px 0px; position: relative;
+    }
+    .my_wrk li:before, .my_wrk li:after, .recent_wrk li:before, .recent_wrk li:after
+    {
+    z-index: -1; position: absolute; content: ""; bottom: 25px; left: 12px; width: 97%; top: 80%;
+    background: rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);  -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); -ms-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); -o-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -o-transform: rotate(-3deg); -ms-transform: rotate(-3deg); transform: rotate(-3deg);
+    }
+    .recent_wrk li:before, .recent_wrk li:after
+    {
+    width: 97%;
+    }
+    .my_wrk li:after, .recent_wrk li:after
+    {
+    -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg);
+    }	
+    /*------------- Individual styling of each class identifier -------------*/
+    .ch-item
+    {
+    display: block; width: 100%; height: 350px; position: relative; visibility: visible; opacity: 1;
+    box-shadow:
+    inset 0 0 0 16px rgba(255,255,255,0.6),
+    0 1px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow:
+    inset 0 0 0 16px rgba(255,255,255,0.6),
+    0 1px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+    inset 0 0 0 16px rgba(255,255,255,0.6),
+    0 1px 2px rgba(0,0,0,0.1);
+    
+    transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out;
+    }
+    /*--------------------- setting the background-image --------------------*/
+    .ch-item a
+    {
+    width: 100%; height: 350px;
+    }
+    .ch-img-1, .ch-img-1b, .ch-img-2, .ch-img-2b, .ch-img-3, .ch-img-3b, .ch-img-4, .ch-img-4b
+    {
+    position: absolute; left: 0; background-position: bottom center; width: 100%; height: 350px; overflow: hidden; vertical-align: middle; opacity: 1;
+    transition: all 0.7s ease-in-out; -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; -ms-transition: all 0.7s ease-in-out;
+    }
+    .ch-img-1
+    {
+    background-image: url(../images/work_thumbs/graphic-design.jpg);
+    }
+    .ch-img-2
+    {
+    background-image: url(../images/work_thumbs/web.jpg); 
+    }
+    .ch-img-3
+    {
+    background-image: url(../images/work_thumbs/illust.jpg);
+    }
+    .ch-img-4
+    {
+    background-image: url(../images/work_thumbs/innovation.jpg);
+    }
+    .ch-img-4b, .ch-img-3b, .ch-img-2b, .ch-img-1b
+    {
+    background-position: top center; background-color: rgba(200, 95, 66, 0.3);
+    }
+    .img_lnk
+    {
+    display: block; width: 100%; height: 350px;
+    }
+    /*----------------- end of the work background-image preview ----------------*/
+    .ch-info
+    {
+    position: absolute; z-index: 100px; width: 100%; height: 100%; overflow: hidden; opacity: 1;
+    transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out;
+    transform: scale(1); backface-visibility: visible;
+    }
+    .ch-img-4b:hover, .ch-img-3b:hover, .ch-img-2b:hover, .ch-img-1b:hover
+    {
+    opacity: 0; cursor: pointer;
+    }
+    .ch-info:hover
+    {
+    opacity: 0; transform: scale(0); -webkit-transform: scale(0); -moz-transform:  scale(0);
+    }
+    /*--------------------- end of Work Display Styling ------------------------*/
+    /*****************************************************************************
+    *====================== Skills Graph Styling ================================
+    *****************************************************************************/
+    /* Styling of the graph */
+    #graph, #markers
+    {
+    width: 100%; display: block; padding-top: 25px; margin-bottom: 25px; border-left: 1px solid rgba(200,95,66,0.4); border-top: 1px solid rgba(200,95,66,0.4);
+    }
+    #graph li
+    {
+    margin-left: 25px; margin-bottom: 25px; padding: 5px 10px; border-bottom: 1px solid rgba(200,95,66,0.4); border-right: 25px solid rgba(200,95,66,0.4); height: 15px;
+    /* Standard */
+    transform: skew(125deg);
+    /* Safari */
+    -webkit-transform: skew(125deg);
+    /* Firefox */
+    -moz-transform: skew(125deg);
+    /* IE */
+    -ms-transform: skew(125deg);
+    /* Opera */
+    -o-transform: skew(125deg);
+    }
+    #graph li p, #respon_d span
+    {
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px; line-height: 2px;
+    /* Standard */
+    transform: skew(-125deg);
+    /* Safari */
+    -webkit-transform: skew(-125deg);
+    /* Firefox */
+    -moz-transform: skew(-125deg);
+    /* IE */
+    -ms-transform: skew(-125deg);
+    /* Opera */
+    -o-transform: skew(-125deg);
+    }
+    #respon_d span
+    {
+    display: inline-block; font-size: 0.7em; padding-top: 15px; 
+    }
+    /* Styling the graph bars */
+    #html, #css, #ai, #ps,#id
+    {
+    width: 75%;
+    }
+    #php, #jq, #respon_d
+    {
+    width: 55%;
+    }
+    #js
+    {
+    width: 35%;
+    }
+    /* Styling of the graph markers */
+    #markers
+    {
+    margin-top: 20px; padding: 0px; padding-left: 20%; border: none;
+    }
+    #markers li
+    {
+    display: block; float: left; width: 20%; margin-bottom: 20px;
+    /* Standard */
+    transform: rotate(-40deg);
+    /* Safari */
+    -webkit-transform: rotate(-40deg);
+    /* Firefox */
+    -moz-transform: rotate(-40deg);
+    /* IE */
+    -ms-transform: rotate(-40deg);
+    /* Opera */
+    -o-transform: rotate(-40deg);
+    }
+    #markers li p
+    {
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px;
+    }
+    /* Graph Label */
+    #label
+    {
+    width: 20%; text-shadow: 1px 1px 1px #fff; letter-spacing: .5px;
+    }
+    /*---------------------- end of Skills Graph Styling ------------------------*/
+    
+    /********************************************************************************
+    *================== Styling Contact Page Map ===================================
+    * Description: Styling for the Contacts Page map and the elements of the Contact
+    *              Details container.
+    * Author: Zaine Kingi
+    * Website: ZK Design.
+    ********************************************************************************/
+    #contact_map
+    {
+    width: 880px; margin-top: 70px; padding-left: 80px; border-bottom: none;
+    }
+    #inner
+    {
+    width: 880px; height: 400px; position: relative; behavior: url("../ie-css3.htc"); /* This lets IE know to call the script on all elements which get the 'inner' id */
+    }
+    #inner:before, #inner:after
+    {
+    z-index: -1; position: absolute; content: ""; bottom: 25px; left: 20px; width: 96%; top: 80%;
+    background: rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7); -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); -ms-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -o-transform: rotate(-3deg); -ms-transform: rotate(-3deg); transform: rotate(-3deg);
+    }
+    #inner:after
+    {
+    -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg);
+    }
+    /*Styling the contact page map details*/
+    #contact_dts
+    {
+    float: left; position: relative; z-index: 1; top: -30px; left: 35px; width: 246px; background-color: #fff;
+    }
+    #contact_head
+    {
+    width: 246px; height: 50px; background-color: orange;
+    box-shadow: 0px 10px 10px -15px black; -moz-box-shadow: 0px 10px 10px -15px black; -webkit-box-shadow: 0px 10px 20px -15px black; -o-box-shadow: 0px 10px 20px -15px black; -ms-box-shadow: 0px 10px 20px -15px black;
+    behavior: url("../ie-css3.htc"); /* This lets IE know to call the script on all elements which get the 'contact_head' id */
+    }
+    #contact_head h2
+    {
+    font-size: 130%; color: #fff; text-align: center; text-decoration: none; text-transform: capitalize; width: 246px; margin-top: 0px; line-height: 50px; border: none; border-bottom: none;
+    }
+    #contact_page_info
+    {
+    padding: 15px 10px;
+    }
+    #contact_page_info h3
+    {
+    font-size: 16px; text-transform: capitalize; line-height: 25px; color: #343735;
+    }
+    #contact_page_info p
+    {
+    text-transform: capitalize; margin-bottom: 15px; color: #929392;
+    }
+    div#contact_page_info p:last-child
+    {
+    text-transform: lowercase;
+    }
+    #map
+    {
+    position: absolute; display: block; width: 880px; height: 400px;
+    }
+    /*****************************************************************************
+    *====================== Contact Form Styling =================================
+    * Description: Styling of the Contact Form elements.
+    * Author: Zaine Kingi.
+    * Website: ZK Design.
+    *****************************************************************************/
+    #form
+    {
+    width: 400px; margin: 25px 0px 50px 80px; padding: 20px; background-color: #ccc; display: block; float: left;
+    }
+    form label, form input, form textarea
+    {
+    display: block; text-transform: capitalize; font-family: nill; font-weight: lighter; color: rgb(117, 117, 117);
+    }
+    form label
+    {
+    margin-top: 25px; color: #fff;
+    }
+    form input, form textarea
+    {
+    text-transform: none; font-size: .9em; font-family: HelveticaNeueLt; padding: 5px; width: 385px;
+    }
+    input[type=submit]
+    {
+    background-color: orange; width: 100px; height: 30px; border: none; margin-top: 25px; color: #fff; line-height: 25px;
+    transition: all ease-in-out 0.4s; -webkit-transition: all ease-in-out 0.4s; -moz-transition: all ease-in-out 0.4s; -o-transition: all ease-in-out 0.4s; -ms-transition: all ease-in-out 0.4s;
+    }
+    .errors
+    {
+    color: red; display:block; width: 265px;
+    }
+    input[type=submit]:hover
+    {
+    background-color: rgba(200,95,66,.4);cursor: pointer;
+    }
+    /*****************************************************************************
+    *==================== Contact Page Personal Details Styling ==================
+    * Description: Styling of the Contact Info elements.
+    * Author: Zaine Kingi.
+    * Website: ZK Design.
+    ******************************************************************************/
+    #personal_dets
+    {
+    display: block;float: right; width: 400px; margin: 25px 0px 0px 0px; padding: 5px 0px 5px 0px; border-top: #CCCCCC solid 1px; border-bottom: #CCCCCC solid 1px;
+    }
+    #personal_dets h2
+    {
+    font-size: 1.5em; color: #333; text-shadow: 2px 3px 1px #ccc, 1px 1px 0px #fff;
+    }
+    /*********************** End of Contact Page Styling ************************/
+    /****************************************************************************
+    *========================= Gallery Container Styling ========================
+    *	Description: Styling for the "Image Gallery" display for work.
+    *		     Used on the "_work" pages of the website.
+    *	Author: Zaine Kingi.
+    *	Website: ZKDesign.co.nz
+    *****************************************************************************/
+    .gallery_container
+    {
+    width: 960px; margin: 0px auto; padding: 0px;
+    }
+    .gallery_container hgroup
+    {
+    margin: 0px; padding: 20px 0px 10px 0px;
+    }
+    #slider
+    {
+    width: inherit; height: 400px; margin: 0px; padding: 0px; margin-top: 35px; overflow: scroll;
+    }
+    #slider ul
+    {
+    width: 9000px; margin: 0px auto; padding: 0px; position: positive; white-space: nowrap;
+    }
+    #slider ul li, #slider ul li img
+    {
+    width: 600px; height: 400px; margin: 0px; padding: 0px; display: block; float: left;
+    }
+    #slider ul, #slider ul li, #slider ul li a, #slider ul li a img
+    {
+    border: none;
+    }
+    #slider_nav
+    {
+    display: none; margin: 1em 0px;
+    }
+    #slider_nav span
+    {
+    width: 45px; height: 45px; display: inline-block; background-image: url('../images/icons.jpg'); cursor: pointer;
+    }
+    #slider_nav span:nth-child(1)
+    {
+    background-position: -413px -45px;
+    }
+    #slider_nav span:nth-child(2)
+    {
+    background-position: -453px -45px;
+    }
+    .fade_reverse /* universal class to apply a fade-in-out effect on */
+    {
+    opacity: 0.5;filter: alpha(opacity=50);
+    -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;
+    }
+    .fade_reverse:hover
+    {
+    opacity: 1;filter: alpha(opacity=100); cursor: pointer;
+    }
+    /*****************************************************************************
+     *========================= Social Media Sharing =============================
+     *
+     *	Description:	Styling for all the social media sharing elements within the
+     *			div with the class of 'share'.
+     *	Author:		Zaine Kingi.
+     *--------------------------------------------------------------------------*/
+    .share
+    {
+	display: block; padding-bottom: 25px; width: inherit;
+    }
+    .share h1
+    {
+	border-bottom: 1px solid #ccc;
+    }
+    .share h1 span
+    {
+	font-size: .5em; text-transform: lowercase; text-shadow: none; letter-spacing: .5px; line-height: 2em;
+    }
+    .fb-share-button
+    {
+	vertical-align: middle; height: 35px; margin-right: 10px;
+    }
+    .fb-like
+    {
+	vertical-align: middle; height: 35px; margin-right: 10px;
+    }
+    .IN-widget
+    {
+	vertical-align: baseline; margin-right: 10px; height: 20px;
+    } 
+    .twitter-share-button
+    {
+	vertical-align: baseline; margin-right: -25px;
+    }
+    .g-plusone
+    {
+	display: block; margin: 0px; padding: 0px; border: 1px solid red;
+    }
+    /*****************************************************************************
+    *========================== Footer Container Styling =========================
+    ******************************************************************************/
+    footer
+    {
+    margin: 0px; padding: 0px; padding-bottom: 25px; display: block; clear: both; border-top: 5px solid #000; margin-top: 15px;
+    }
+    #footer_content, #ft_contact_info
+    {
+    width: 960px; margin: 0px auto; padding: 0px;
+    }
+    #zk_details, .ft_contact_info
+    {
+    display: block; padding: 0px; margin: 0px; width: 90%; float: left;
+    }
+    #zk_details h1, #zk_details p
+    {
+    font-size: 2em; text-shadow: none; letter-spacing: normal;
+    }
+    #zk_details p
+    {
+    font-size: .9em; letter-spacing: .5px;
+    }
+    #scroller
+    {
+    float: right; padding-top: 15px;
+    }
+    footer hr
+    {
+    border-top: thin dotted #999; width: 100%;
+    }
+    #ft_contact_info
+    {
+    float: none;
+    }
+    .ft_contact_info
+    {
+    padding: 15px 0px 15px 0px;
+    }
+    .ft_contact_info span, .scroller
+    {
+    display: block; float: left; width: 45px; height: 45px; background-image: url('../images/icons.jpg'); margin-right: 10px; padding: 0px; margin-left: 25px;
+    transition: all ease-in-out 0.3s; -webkit-transition: all ease-in-out 0.3s; -moz-transition: all ease-in-out 0.3s;
+    }
+    .ft_contact_info p
+    {
+    font-size: .8em; display: block; width: 100px; height: 25px; float: left; line-height: 50px;
+    }
+    .ft_contact_info p:last-of-type
+    {
+    width: 170px;
+    }
+    .scroller /*up arrow*/
+    {
+    background-position: -365px -45px;
+    }
+    .ft_contact_info a:nth-child(1) span /*mobile*/
+    {
+    margin-left: 0px; background-position: -320px -45px; cursor: pointer;
+    }
+    .ft_contact_info a:nth-child(2) span /*twitter*/
+    {
+    background-position: -278px -45px;
+    }
+    .ft_contact_info a:nth-child(3) span /*linkdin*/
+    {
+    background-position: -185px -45px;
+    }
+/************************* End Of The Footer Styling ****************************
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+* 										*
+*******************************************************************************/
+/*******************************************************************************
+* Media Queries.
+* Description: Media Queries Styling for ZKDesign Website.
+* Target Devices: iPhone [1-5], iPod, iPad[1,2].
+* Author: Zaine Kingi
+*******************************************************************************/
+/*=============================================================================
+*--------------------- Device Portrait Styling --------------------------------
+* Description: Styling targeted devices in "PORTRAIT" mode.
+* Author: Zaine Kingi.
+/******************************************************************************
+*========================= iPhone Portrait Styling ============================
+* Target Device: iPhone Gen.1-5.
+*******************************************************************************/
+@media only screen and (max-width: 380px)/* iPhone [Gen.1-5] */
+{
+    body, #zkdesign
+    {
+    width: 380px; padding: 0px; margin: 0px; /*background-color: blue;*/
+    }
+    #main
+    {
+    height: 220px;
+    }
+    #logo
+    {
+    opacity: 1; margin-bottom: 20px;
+    }
+    #logo:hover
+    {
+    margin: 0px;
+    }
+    #logo a
+    {
+    display: block;
+    }
+    #zkdesign p a
+    {
+    position: absolute; top: -5px; left: 315px; z-index: 100; color: #000;
+    }
+    .section1, .section2, .section3
+    {
+    width: 340px; padding: 0px 20px;
+    }
+    .section1 .para2, aside .para3, .para3, .section2 .para2
+    {
+    width: 340px; padding: 0px;
+    }
+    #typo_collage
+    {
+    display: none; visibility: hidden;
+    }
+    /*Work Page Styling*/
+    .work_desc
+    {
+    width: 340px; padding: 0px; padding-top: 25px; margin: 25px auto; margin-bottom: 0px;
+    }
+    .work_desc hgroup
+    {
+    margin: 0px;
+    }
+    .work_desc hgroup h1, .work_desc hgroup h2
+    {
+    text-align: left;
+    }
+    .work_desc hgroup h2
+    {
+    font-size: 1.4em;
+    }
+    .aside, .aside_redirect
+    {
+    width: 100%; display: block; float: left; margin: 8px 0px; padding: 0px; border: none;
+    }
+    .aside hgroup h2, .aside_redirect hgroup h2
+    {
+    text-align: left; margin-top: 10px; text-indent: 0px; font-size: 1.8em;
+    }
+    .aside p, .aside p a, .aside_redirect p, .aside_redirect p a
+    {
+    text-indent: 0px; color: #999; text-indent: 0px; margin: 0px;
+    transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;
+    }
+    .aside p a:hover, .aside_redirect p a:hover
+    {
+    color: red; text-shadow: 2px 3px 1px #ccc;
+    }
+    /*End of Work page Styling*/
+    /*****************************************************************************
+    *========================= Gallery Container Styling ========================
+    *	Description: Styling for the "Image Gallery" display for work.
+    *		     Used on the "_work" pages of the website.
+    *	Author: Zaine Kingi.
+    *	Website: ZKDesign.co.nz
+    ****************************************************************************/
+    .gallery_container
+    {
+    width: 340px; margin: 0px auto; padding: 0px 20px 15px 20px;
+    }
+    .gallery_container hgroup
+    {
+    margin: 0px; padding: 20px 0px 10px 0px;
+    }
+    #slider
+    {
+    width: inherit; height: auto; margin: 0px; padding: 0px;
+    }
+    #slider ul
+    {
+    width: 340px; margin: 0px auto; padding: 0px; position: positive; white-space: nowrap;
+    }
+    #slider ul li, #slider ul li img
+    {
+    width: 340px; height: 250px; margin: 5px auto; padding: 0px; display: block; float: left;
+    }
+    #slider ul, #slider ul li, #slider ul li a, #slider ul li a img
+    {
+    border: none;
+    }
+    #slider_nav
+    {
+    height: 1px; width: 1px; display: none; visibility: hidden;
+    }
+    /*End of gallery Display Styling*/
+    /******************* Navigation iPhone Styling ************************/
+    nav
+    {
+    padding: 0px; margin: 195px 20px 0px 0px;
+    }
+    nav ul
+    {
+    width: 340px; padding: 0px 10px; margin: 0px auto;
+    }
+    nav ul li a
+    {
+    background-image: none; text-indent: 0px; text-align: center; width: 85px; height: 25px; margin: 0px; padding: 0px; line-height: normal; color: #333; opacity: 1; font-size: 1.3em; background-color: transparent;
+    transition: all ease-in-out 0.4s; -webkit-transition: all ease-in-out 0.4s; -moz-transition: all ease-in-out 0.4s; -ms-transition: all ease-in-out 0.4s; -o-transition: all ease-in-out 0.4s;
+    }
+    nav ul li a:hover
+    {
+    margin-top: 0px; text-indent: 0px; line-height: normal; font-size: 1.3em; background-color: rgba(200,95,66,0.4);
+    }
+    /******************* End Of Navigation iPhone Styling *****************/
+    /*===================================================================
+    * Classes Col_1 and Col_2 Created for multi colum layouts.
+    * ================================================================*/
+    .col_1, .col_2
+    {
+    width: 340px; display: block; padding: 0px; margin: 25px 0px;
+    }
+    /******************* Styling Work Display For iPhone ******************/
+    .section2 hgroup, .section1 hgroup, .section3 hgroup
+    {
+    width: 340px; text-align: center; padding: 0px; margin: 0px;
+    }
+    .section1 hgroup
+    {
+    text-align: left;
+    }
+    .recent_wrk, .my_wrk, .recent_wrk li, .my_wrk li
+    {
+    width: 340px; padding: 0px; margin: 25px 0px; float: none;
+    }
+    .my_wrk li:before, .my_wrk li:after, .recent_wrk li:before, .recent_wrk li:after
+    {
+    display: none; visibility: hidden;
+    }
+    .my_wrk li, .recent_wrk li
+    {
+    height: 250px;
+    }
+    .ch-img-4, .ch-img-3, .ch-img-2, .ch-img-1
+    {
+    border: 1px solid #ccc; height: 250px; background-position: right center; margin: 0px;
+    }
+    .ch-img-4b, .ch-img-3b, .ch-img-2b, .ch-img-1b
+    {
+    background-color: transparent;
+    }
+    .ch-info
+    {
+    opacity: 0; transform: scale(0); -webkit-transform: scale(0); -moz-transform:  scale(0);
+    }
+    /******************* End Of Work Display For iPhone *******************/
+    /******************* Skills Graph Styling **************************************/
+    #markers li
+    {
+    margin-bottom: 0px; height: 25px;
+    }
+    /****************** End Of Skills Graph Styling ********************************/
+    /*****************************************************************************
+    *====================== Contact Page Map Styling ============================
+    * Author: Zaine Kingi.
+    * Website: ZK Design.
+    ****************************************************************************/
+    #contact_map
+    {
+    width: 340px; height: 300px; margin: 0px auto; padding: 0px;
+    }
+    #inner
+    {
+    width: 340px; padding: 0px;
+    }
+    #inner:before, #inner:after
+    {
+    display: none; visibility: hidden;
+    }
+    /**
+    * Styling of the Contact Details container
+    * and the elements of the Contact Details container.
+    * Author: Zaine Kingi
+    * Website: IAmZaine
+    *
+    */
+    #map
+    {
+    position: absolute; display: block; width: 340px; height: 300px; padding: 0px; border: 1px solid #ccc;
+    }
+    #contact_dts
+    {
+    display: none; visibility: hidden;
+    }
+    /*Contact Form Styling*/
+    #form
+    {
+    width: 300px; margin: 0px auto;
+    }
+    #form input, #form textarea
+    {
+    width: 285px;
+    }
+    #form input[type=submit]
+    {
+    width: 50px;
+    }
+    #personal_dets
+    {
+    width: 340px; display: block;
+    }
+    /*********************** End of Contact Page Styling ************************/
+    /*****************************************************************************
+     *========================= Social Media Sharing =============================
+     *
+     *	Description:	Styling for all the social media sharing elements within the
+     *			div with the class of 'share'.
+     *	Author:		Zaine Kingi.
+     *--------------------------------------------------------------------------*/
+    .share
+    {
+	display: block; padding-bottom: 25px; width: 100%;
+    }
+    .share h1
+    {
+	border-bottom: 1px solid #ccc;
+    }
+    .share h1 span
+    {
+	font-size: .5em; text-transform: lowercase; text-shadow: none; letter-spacing: .5px; line-height: 2em; display: block; float: left;
+    }
+    .fb-share-button, .fb-like, .IN-widget, .twitter-share-button, .g-plusone
+    {
+	display: block; margin-bottom: 50px; float: left; clear: both;
+    }
+    .fb-like
+    {
+	
+    }
+    .IN-widget
+    {
+	
+    }
+    .twitter-share-button
+    {
+	padding: 0px; margin: 0px; margin-bottom: 50px;
+    }
+    /****************** Footer iPhone Styling *****************************/
+    footer
+    {
+    display: block; float: left; width: 100%;
+    }
+    footer hr
+    {
+    border-top: 1px dashed #999; display: left; float: left; width: 100%;
+    }
+    #footer_content, #ft_contact_info
+    {
+    width: 340px; padding: 0px 20px; margin: 0px; display: block;
+    }
+    #zk_details, .ft_contact_info
+    {
+    width: 100%; font-size: .8em;
+    }
+    .ft_contact_info
+    {
+    width: 250px; padding-bottom: 0px;
+    }
+    .ft_contact_info a p
+    {
+    visibility: hidden; display: none;
+    }
+    .ft_contact_info a span
+    {
+    background-position: center bottom; margin: 0px 20px; padding: 0px;
+    }
+    .scroller
+    {
+    margin: 0px; padding: 0px; background-position: center bottom;
+    }
+    .scroller
+    {
+    background-position: -366px -45px;
+    }
+    .ft_contact_info a:nth-child(1) span/* ph */
+    {
+    background-position: -320px -45px; cursor: pointer;
+    }
+    .ft_contact_info a:nth-child(2) span/* twitter */
+    {
+    background-position: -278px -45px;
+    }
+    .ft_contact_info a:nth-child(3) span/* lnkdIn */
+    {
+    background-position: -186px -45px;
+    }
+    /****************** End Of Footer iPhone Styling ********************/
+}/*================= End of iPhone Gen.1-5 Portrait ====================*
+  *									*
+  *									*
+  *									*
+  *									*
+  *									*/
+/************************************************************************
+*=============== iPad Portrait Styling =================================
+* Target Device: iPad Generations 1 and 2.
+************************************************************************/
+@media only screen and (max-width: 768px) and (min-width: 381px)/*iPad[Gen.1, 2] Done 24/7/13*/
+{
+    body, #zkdesign
+    {
+    width: 768px; margin: 0px; padding: 0px;
+    }
+    #logo
+    {
+    opacity: 1; 
+    }
+    #logo:hover
+    {
+    margin: 0px;
+    }
+    #zkdesign p a
+    {
+    margin-right: -290px;
+    }
+    .section1, .section2, .section3
+    {
+    width: 708px; margin: 0px 10px; padding: 0px;
+    }
+    .section1 .para2, .section2 .para3, .section1 hgroup
+    {
+    width: 608px; padding-left: 100px;
+    }
+    .section1 hgroup
+    {
+    padding: 0px;
+    }
+    /*Work Page Styling*/
+    .work_desc
+    {
+    width: 608px; margin: 15px 0px 0px 100px;
+    }
+    .aside, .aside_redirect
+    {
+    width: 100%; display: block; float: left; margin: 8px 0px; padding: 0px 0px 0px 100px; border: none;
+    }
+    .aside h2, .aside_redirect h2
+    {
+    text-align: left; margin-top: 10px; text-indent: 0px;
+    }
+    .aside p, .aside p a, .aside_redirect p, .aside_redirect p a
+    {
+    text-indent: 15px; color: #999; display: inline; text-indent: 0px; margin: 25px 8px;
+    transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;
+    }
+    .aside p a:hover, .aside_redirect p a:hover
+    {
+    color: red; text-shadow: 2px 3px 1px #ccc;
+    }
+    .aside p:nth-child(2)
+    {
+    margin-left: -10px;
+    }
+    /*End of Work page Styling*/
+    /*****************************************************************************
+    *========================= Gallery Container Styling =========================
+    *	Description: Styling for the "Image Gallery" display for work.
+    *		     Used on the "_work" pages of the website.
+    *	Author: Zaine Kingi.
+    *	Website: ZKDesign.co.nz
+    *****************************************************************************/
+    .gallery_container
+    {
+    width: 880px; margin: 0px auto 25px auto; padding: 0px 0px 0px 100px;
+    }
+    .gallery_container hgroup
+    {
+    margin: 0px; padding: 20px 0px 10px 0px;
+    }
+    #slider
+    {
+    width: inherit; height: 400px; margin: 0px; padding: 0px; margin-top: 35px; overflow: scroll;
+    }
+    #slider ul
+    {
+    width: 10000px; margin: 0px auto; padding: 0px; position: positive; white-space: nowrap;
+    }
+    #slider ul li, #slider ul li img
+    {
+    width: 600px; height: 400px; margin: 0px; padding: 0px; display: block; float: left;
+    }
+    #slider ul, #slider ul li, #slider ul li a, #slider ul li a img
+    {
+    border: none;
+    }
+    .#slider ul
+    {
+    -webkit-transition-property: -webkit-transform; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease-out;
+    }
+    #slider ul, .fancy_li
+    {
+    /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+    -webkit-transform: translate3d(0px,0px,0px);
+    }
+    #slider_nav
+    {
+    display: none; /*visibility: hidden;*/ margin: 1em 0px;
+    }
+    /*End of gallery Display Styling*/
+    /*********************** Navigation iPad Styling **************************/
+    nav
+    {
+    padding-right: 25px;
+    }
+    nav ul
+    {
+    width: 316px; margin-right: 25px; margin-top: 50px;
+    }
+    nav ul li a
+    {
+    background-image: none; text-indent: 0px; text-align: center; width: 75px; height: 25px; margin: 0px; margin-top: 0px; padding: 2px; line-height: normal; color: #333; opacity: 1; font-size: 1.3em; background-color: transparent;
+    transition: all ease-in-out 0.4s; -webkit-transition: all ease-in-out 0.4s; -moz-transition: all ease-in-out 0.4s; -ms-transition: all ease-in-out 0.4s; -o-transition: all ease-in-out 0.4s;
+    }
+    nav ul li a:hover
+    {
+    margin-top: 0px; text-indent: 0px; line-height: normal; font-size: 1.3em; background-color: rgba(200,95,66,0.4);
+    }
+    /******************* End Of Navigation iPad Styling *****************/
+    /*===================================================================
+    * Classes Col_1 and Col_2 Created for multi colum layouts.
+    * ==================================================================*/
+    .col_1, .col_2
+    {
+    width: 608px; display: block; float: left; padding: 0px; margin: 15px 0px 25px 100px; border-bottom: 1px dotted #999;
+    }
+    /******************* Styling Work Display For iPad ******************/
+    .recent_wrk, .my_wrk
+    {
+    width: 608; margin: 0px auto; padding: 0px 0px 0px 100px;
+    }
+    .recent_wrk li, .my_wrk li
+    {
+    width: 608px; padding: 0px; margin: 50px 0px; float: none;
+    }
+    .recent_wrk, .recent_wrk li
+    {
+    width: 100%; margin: 10px 0px; padding: 0px;
+    }
+    .section2 hgroup, .section2 .wrk_view header hgroup, .my_wrk, .section3 hgroup
+    {
+    width: 748px; text-align: center;
+    }
+    .para3 hgroup
+    {
+    width: 600px; text-align: center; margin: 0px auto; padding: 0px;
+    }
+    .ch-img-4b, .ch-img-3b, .ch-img-2b, .ch-img-1b
+    {
+    background-color: transparent;
+    }
+    .ch-info
+    {
+    opacity: 0; transform: scale(0); -webkit-transform: scale(0); -moz-transform:  scale(0);
+    }
+    /************************ End Of Work Display For iPad **********************/
+    /************************ Skills Graph Styling ******************************/
+    #markers li
+    {
+    margin-bottom: 0px;
+    }
+    /****************** End Of Skills Graph Styling *****************************/
+    /****************************************************************************
+    *====================== Contact Page Map Styling ============================
+    * Author: Zaine Kingi.
+    * Website: ZK Design.
+    ****************************************************************************/
+    #contact_map
+    {
+    width: 608px; margin: 70px auto; padding: 0px 0px 0px 100px;
+    }
+    #inner
+    {
+    width: 608px;
+    }
+    #inner:before, #inner:after
+    {
+    width: 95%; bottom: 67px;
+    }
+    /**
+    * Styling of the Contact Details container
+    * and the elements of the Contact Details container.
+    * Author: Zaine Kingi
+    * Website: IAmZaine
+    *
+    */
+    #map
+    {
+    position: absolute; display: block; width: 608px; height: 360px;
+    }
+    #form
+    {
+    width: 300px; margin: 25px 0px 50px 100px;
+    }
+    #form input, #form textarea
+    {
+    width: 290px;
+    }
+    #form input[type=submit]
+    {
+    width: 50px;
+    }
+    #personal_dets
+    {
+    width: 250px; display: block; float: right;
+    }
+    /********************* End of Contact Page Styling *********************/
+    /********************* Footer iPad Styling *****************************/
+    footer
+    {
+    display: block; width: 768px; margin: 0px auto;
+    }
+    footer hr
+    {
+    border-top: 1px dashed #999; display: block; float: left; width: 100%;
+    }
+    #footer_content, #ft_contact_info
+    {
+    width: 663px; padding: 0px 50px 0px 55px; margin: 0px; display: block;
+    }
+    #zk_details
+    {
+    display: block; margin: 0px; padding: 0px; float: left; margin-top: 10px;
+    }
+    #zk_details, .ft_contact_info
+    {
+    width: 618px; padding: 10px 0px 0px 50px;
+    }
+    .ft_contact_info
+    {
+    width: 500px; padding-bottom: 0px;
+    }
+    .ft_contact_info a p
+    {
+    visibility: hidden; display: none;
+    }
+    .ft_contact_info a span
+    {
+    background-position: center bottom; margin: 0px 25px; padding: 0px;
+    }
+    .scroller
+    {
+    margin: 0px; padding: 0px; background-position: center bottom;
+    }
+    .scroller
+    {
+    background-position: -365px -45px;
+    }
+    .ft_contact_info a:nth-child(1) span/* ph */
+    {
+    background-position: -320px -45px; cursor: pointer;
+    }
+    .ft_contact_info a:nth-child(2) span/* twitter */
+    {
+    background-position: -275px -45px;
+    }
+    .ft_contact_info a:nth-child(3) span/* lnkdIn */
+    {
+    background-position: -180px -45px;
+    }
+    /******************** End Of Footer iPad Styling **********************/
+}/*=================== End of iPad Portrait Styling======================*
+ *									 *
+ *									 *
+ *									 *
+ *									 *
+ *									 *
+**************************************************************************
+*====================== iPhone Landscape Styling =========================
+* Target Device: iPhone Landscape Mode.
+*************************************************************************/
+@media only screen and (max-width: 960px) and (min-width: 769px)/*iPhone Landscape Done 24/7/13*/
+{
+    body, #zkdesign
+    {
+    width: 960px; margin: 0px; padding: 0px;
+    }
+    #logo
+    {
+    opacity: 1; 
+    }
+    #logo:hover
+    {
+    margin: 0px;
+    }
+    #zkdesign p a
+    {
+    margin-right: -290px;
+    }
+    .section1, .section2, .section3
+    {
+    width: 900px; margin: 0px; padding: 0px;
+    }
+    .section1 .para2, .section2 .para3, .section1 hgroup
+    {
+    width: 800px; padding-left: 80px;
+    }
+    /*Work Page Styling*/
+    .work_desc
+    {
+    width: 560px; margin: 15px 0px 0px 80px;
+    }
+    .aside, .aside_redirect
+    {
+    width: 240px; display: block; float: right; margin: 8px 0px; padding: 0px; border: none;
+    }
+    .aside h2, .aside_redirect h2
+    {
+    text-align: left; margin-top: 10px; text-indent: 15px;
+    }
+    .aside p, .aside p a, .aside_redirect p, .aside_redirect p a
+    {
+    text-indent: 15px; color: #999;
+    transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;
+    }
+    .aside p a:hover, .aside_redirect p a:hover
+    {
+    color: red; text-shadow: 2px 3px 1px #ccc;
+    }
+    .aside_redirect
+    {
+    margin-top: 158px;
+    }
+    /*End of Work page Styling*/
+    /*****************************************************************************
+    *========================= Gallery Container Styling ========================
+    *	Description: Styling for the "Image Gallery" display for work.
+    *		     Used on the "_work" pages of the website.
+    *	Author: Zaine Kingi.
+    *	Website: ZKDesign.co.nz
+    ****************************************************************************/
+    .gallery_container
+    {
+    width: 880px; margin: 0px auto; padding: 0px 0px 0px 80px;
+    }
+    .gallery_container hgroup
+    {
+    margin: 0px; padding: 20px 0px 10px 0px;
+    }
+    #slider
+    {
+    width: inherit; height: 400px; margin: 0px; padding: 0px; margin-top: 35px; overflow: scroll;
+    }
+    #slider ul
+    {
+    width: 9000px; margin: 0px auto; padding: 0px; position: positive; white-space: nowrap;
+    }
+    #slider ul li, #slider ul li img
+    {
+    width: 600px; height: 400px; margin: 0px; padding: 0px; display: block; float: left;
+    }
+    #slider ul, #slider ul li, #slider ul li a, #slider ul li a img
+    {
+    border: none;
+    }
+    #slider_nav
+    {
+    display: none; /*visibility: hidden;*/ margin: 1em 0px;
+    }
+    /*End of gallery Display Styling*/
+    .section1 hgroup
+    {
+    padding: 0px;
+    }
+    /****************** Navigation iPhone Landscape Styling ********************/
+    nav
+    {
+    padding-right: 25px;
+    }
+    nav ul
+    {
+    width: 316px; margin-right: 50px; margin-top: 50px;
+    }
+    nav ul li a
+    {
+    background-image: none; text-indent: 0px; text-align: center; width: 75px; height: 25px; margin: 0px; margin-top: 0px; padding: 2px; line-height: normal; color: #333; opacity: 1; font-size: 1.3em; background-color: transparent;
+    transition: all ease-in-out 0.4s; -webkit-transition: all ease-in-out 0.4s; -moz-transition: all ease-in-out 0.4s; -ms-transition: all ease-in-out 0.4s; -o-transition: all ease-in-out 0.4s;
+    }
+    nav ul li a:hover
+    {
+    margin-top: 0px; text-indent: 0px; line-height: normal; font-size: 1.3em; background-color: rgba(200,95,66,0.4);
+    }
+    /******************* End Of Navigation iPad Styling *****************/
+    /*===================================================================
+    * Typography Collage.
+    * ===================================================================*/
+    #typo_collage li:nth-child(3)/* Ð&Ð */
+    {
+	    line-height: 65px; margin-left: -30px; font-size: 6.3em; letter-spacing: 5px; width: 400px;
+    }
+    #typo_collage li:nth-child(4)/* graphic */
+    {
+	    letter-spacing: -7px; line-height: 65px; font-size: 4.5em; font-family: Nill; margin-left: -40px;
+    }
+    #typo_collage li:nth-child(5)/* design */
+    {
+	    font-size: 4.5em; line-height: 0px; letter-spacing: 2px; margin-left: 15px; margin-top: -35px;
+    }
+    #typo_collage li:nth-child(6)/* solutions... */
+    {
+	    font-size: 3.1em; line-height: 80px; letter-spacing: 2px; margin-left: 15px;
+    }
+    
+    /*===================================================================
+    * Classes Col_1 and Col_2 Created for multi colum layouts.
+    * ================================================================*/
+    .col_1, .col_2
+    {
+    width: 400px; display: block; float: left; padding: 0px; margin: 15px 0px 25px 20px;
+    }
+    .col_1
+    {
+    padding-left: 80px; margin-left: 0px;
+    }
+    /************** Styling Work Display For iPhone 4-4s Landscape **************/
+    .recent_wrk, .my_wrk
+    {
+    width: 100%; margin: 0px auto; padding: 0px;
+    }
+    .recent_wrk li, .my_wrk li
+    {
+    width: 860px; padding: 0px; margin: 50px auto; float: none;
+    }
+    .recent_wrk li
+    {
+    margin: 35px auto;
+    }
+    recent_wrk li:before, .recent_wrk li:after
+    {
+    width: 90%;
+    }
+    .section2 hgroup, .section2 .wrk_view header hgroup, .my_wrk, .section3 hgroup
+    {
+    width: 960px; text-align: center;
+    }
+    .para3 hgroup
+    {
+    width: 600px; text-align: center; margin: 0px auto; padding: 0px;
+    }
+    #thumb_detail
+    {
+    width: 1px; display: none; visibility: hidden;
+    }
+    /**************** End Of Work Display For iPhone Landscape **************/
+    /***************************** Skills Graph Styling ****************************/
+    #markers li
+    {
+    margin-bottom: 10px;
+    }
+    /****************** End Of Skills Graph Styling ********************************/
+    /*****************************************************************************
+    *====================== Contact Page Map Styling ============================
+    * Author: Zaine Kingi.
+    * Website: ZK Design.
+    ****************************************************************************/
+    #contact_map
+    {
+    width: 800px; margin: 70px 0px 0px 0px; padding-left: 80px;
+    }
+    #inner
+    {
+    width: 800px;
+    }
+    #inner:before, #inner:after
+    {
+    width: 95%; bottom: 67px;
+    }
+    /**
+    * Styling of the Contact Details container
+    * and the elements of the Contact Details container.
+    * Author: Zaine Kingi
+    * Website: zkdesign
+    *
+    */
+    #map
+    {
+    position: absolute; display: block; width: 800px; height: 360px;
+    }
+    #personal_dets
+    {
+    width: 40%; display: block; float: right;
+    }
+    #form
+    {
+    width: 380px; margin: 25px 0px 0px 80px;
+    }
+    #form input, #form textarea
+    {
+    width: 360px;
+    }
+    #form input[type=submit]
+    {
+    width: 50px;
+    }
+    /*********************** End of Contact Page Styling ************************/
+    /**************** Footer iPhone Landscape Styling *********************/
+    footer
+    {
+    display: block; float: left; width: 960px;
+    }
+    footer hr
+    {
+    border-top: 1px dashed #999; display: block; float: left; width: 100%;
+    }
+    #footer_content, #ft_contact_info
+    {
+    width: 960px; padding: 0px; margin: 0px; display: block; float: left;
+    }
+    #zk_details
+    {
+    display: block; margin: 0px; padding: 0px; float: left; margin-top: 10px;
+    }
+    #zk_details, .ft_contact_info
+    {
+    width: 100%; padding: 10px 0px 0px 50px; margin-left: 35px;
+    }
+    .ft_contact_info
+    {
+    width: 740px;
+    }
+    .ft_contact_info a span
+    {
+    background-position: center bottom; margin: 0px 10px; padding: 0px; width: 50px; height: 50px;
+    }
+    .scroller
+    {
+    margin: 0px 85px 0px 0px; padding: 0px; background-position: center bottom;
+    }
+    .scroller
+    {
+    background-position: -365px -45px;
+    }
+    .ft_contact_info a:nth-child(1) span/* ph */
+    {
+    background-position: -320px -45px; cursor: pointer;
+    }
+    .ft_contact_info a:nth-child(2) span/* twitter */
+    {
+    background-position: -275px -45px;
+    }
+    .ft_contact_info a:nth-child(3) span/* lnkdIn */
+    {
+    background-position: -180px -45px;
+    }
+}/****************** End Of Footer iPhone Landscape Styling *********************/
+/************************************************************************************
+*											*
+*											*
+*											*
+*											*
+*											*
+*											*
+*											*
+*											*
+*											*
+*											*
+*======================= End of zkdesign.co.nz Stylesheet =========================*/

@@ -1,0 +1,170 @@
+/*****************************************************************************
+ * File Name: main_print.css
+ * PATH: /styles/main_print.css
+ * Description: CSS stylesheet for styling of the printed version of ZK Design website.
+ * Version: 1.01.a
+ * Author: Zaine Kingi
+ * ============================= Change History ==============================
+ * - Ver- -- By -- --------------------- Changes -----------------------------
+ * 1.01.a          Initial Release
+ *****************************************************************************/
+
+/*--------------------------- CSS Stylesheet imports ------------------------*/
+@import url('reset.css');/*========= CSS Reset stylesheet ===================*/
+/*--------------------------- End of imports --------------------------------*/
+/*-------------------------- Typeface importing -----------------------------*/
+@font-face {
+	font-family: 'HelveticaNeueLt';
+	src: url('../fonts/HelveticaNeueLTStd-Lt.eot');
+	src: url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Lt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*-------------------------- End of Typeface Importing ----------------------*/
+
+/*============================================================================
+ *------------------------ Base Styling --------------------------------------
+ *===========================================================================*/
+h1, h2, h3, h4, h5, h6, p, a, li /*-------- Typography --------*/
+{
+    font-family: HelveticaNeueLt, sans-serif; color: #ccc;
+}
+h1
+{
+    font-size: 15pt; line-height: 25pt; color: #333;
+}
+h2
+{
+    font-size: 12pt; line-height: 15pt; color: #666; margin-bottom: 15pt;
+}
+p
+{
+    font-size: 8pt; line-height: 15pt;
+}
+.col_1 p:nth-child(4), .col_2 p:nth-child(4)
+{
+    font-size: 8pt; color: #333; margin-bottom: 25px;
+}
+#main /*----------- Structure ------------*/ 
+{
+    background-color: #fafafa; 
+}
+hr
+{
+    clear: both;
+}
+.para2, .para3, .section2, .section3, footer
+{
+    width: 75%; float: right; padding: 0px; margin: 0px; padding-left: 0px;
+}
+.my_graph, .about_me
+{
+    width: 100%;
+}
+.about_me
+{
+    margin-bottom: 20px;
+}
+#typo_collage, nav /*---------- Remove unwanted elements from the print version --------*/
+{
+    display: none; visibility: hidden;
+}
+/*****************************************************************************
+ *====================== Skills Graph Styling ================================
+ ****************************************************************************/
+
+/* Styling of the graph */
+#graph, #markers
+{
+    width: 100%; display: block; padding-top: 25px; margin-bottom: 25px; border-left: 1px solid rgba(200,95,66,0.4); border-top: 1px solid rgba(200,95,66,0.4);
+}
+#graph li
+{
+    margin-left: 15px; margin-bottom: 15px; padding: 5px 10px; border-bottom: 1px solid rgba(200,95,66,0.4); border-right: 20px solid rgba(200,95,66,0.4); height: 10px;
+    
+    /* Standard */
+    transform: skew(125deg);
+    
+    /* Safari */
+    -webkit-transform: skew(125deg);
+    
+    /* Firefox */
+    -moz-transform: skew(125deg);
+    
+    /* IE */
+    -ms-transform: skew(125deg);
+    
+    /* Opera */
+    -o-transform: skew(125deg);
+}
+#graph li p, #respon_d span
+{
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px; line-height: 2px;
+    
+    /* Standard */
+    transform: skew(-125deg);
+    
+    /* Safari */
+    -webkit-transform: skew(-125deg);
+    
+    /* Firefox */
+    -moz-transform: skew(-125deg);
+    
+    /* IE */
+    -ms-transform: skew(-125deg);
+    
+    /* Opera */
+    -o-transform: skew(-125deg);
+}
+#respon_d span
+{
+    display: inline-block; font-size: 0.7em; padding-top: 15px; 
+}
+/* Styling the graph bars */
+#html, #css, #ai, #ps,#id
+{
+    width: 75%;
+}
+#php, #jq, #respon_d
+{
+    width: 55%;
+}
+#js
+{
+    width: 25%;
+}
+/* Styling of the graph markers */
+#markers
+{
+    margin-top: 20px; padding: 0px; padding-left: 20%; border: none;
+}
+#markers li
+{
+    display: block; float: left; width: 20%; margin-bottom: 20px;
+    
+    /* Standard */
+    transform: rotate(-40deg);
+    
+    /* Safari */
+    -webkit-transform: rotate(-40deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(-40deg);
+    
+    /* IE */
+    -ms-transform: rotate(-40deg);
+    
+    /* Opera */
+    -o-transform: rotate(-40deg);
+}
+#markers li p
+{
+    text-shadow: 1px 1px 1px #fff; letter-spacing: .5px;
+}
+/* Graph Label */
+#label
+{
+    width: 20%; text-shadow: 1px 1px 1px #fff; letter-spacing: .5px;
+}
+
+/*---------------------- end of Skills Graph Styling ------------------------*/
